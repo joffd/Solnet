@@ -42,6 +42,11 @@ namespace Solnet.Rpc
         /// <remarks>
         /// Tokens that are issued on Mainnet Beta are real SOL.
         /// </remarks>
-        MainNet
+        MainNet,
+
+        /// <summary>
+        /// solana-test-validator
+        /// </summary>
+        Localhost
     }
 }

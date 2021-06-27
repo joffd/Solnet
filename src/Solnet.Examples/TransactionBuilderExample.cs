@@ -22,7 +22,7 @@ namespace Solnet.Examples
     }
     public class TransactionBuilderExample
     {
-        private static readonly IRpcClient rpcClient = ClientFactory.GetClient(Cluster.TestNet);
+        private static readonly IRpcClient rpcClient = ClientFactory.GetClient(Cluster.Localhost);
 
         private const string MnemonicWords =
             "route clerk disease box emerge airport loud waste attitude film army tray " +
@@ -30,7 +30,7 @@ namespace Solnet.Examples
 
         static void Example(string[] args)
         {
-            var rpcClient = ClientFactory.GetClient(Cluster.TestNet);
+            var rpcClient = ClientFactory.GetClient(Cluster.Localhost);
             var wallet = new Wallet.Wallet(MnemonicWords);
 
             var fromAccount = wallet.GetAccount(10);

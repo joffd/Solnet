@@ -14,6 +14,11 @@ namespace Solnet.Rpc
         private const string RpcDevNet = "https://api.devnet.solana.com";
 
         /// <summary>
+        /// The dev net cluster.
+        /// </summary>
+        private const string RpcLocalhost = "http://localhost:8899";
+
+        /// <summary>
         /// The test net cluster.
         /// </summary>
         private const string RpcTestNet = "https://api.testnet.solana.com";
@@ -51,6 +56,7 @@ namespace Solnet.Rpc
             {
                 Cluster.DevNet => RpcDevNet,
                 Cluster.TestNet => RpcTestNet,
+                Cluster.Localhost => RpcLocalhost,
                 _ => RpcMainNet,
             };
 

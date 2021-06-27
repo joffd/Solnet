@@ -8,7 +8,7 @@ namespace Solnet.Examples
     {
         static void Example(string[] args)
         {
-            var c = ClientFactory.GetClient(Cluster.TestNet);
+            var c = ClientFactory.GetClient(Cluster.Localhost);
 
             //var accInfo = c.GetGenesisHash();
 
